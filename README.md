@@ -20,3 +20,9 @@ And the API can be implemented with fast-api
 I don't have time to implement the diff algorithm. If the data is not important and/or the frequency of refresh
 is not high, we can accept to run a full ingestion without any problem. To implement the diff feature, we need to detect
 if the file is never ingested into the pipeline, and then send these files as input of the data pipeline
+
+* new pubmed file => new_pubmedfile + drug => new_pubmed_drug_file => new_drug_file => new journal_drug_file
+
+* new clinical_trial_file =>  + drug file => new_clinical_drug_file => new_journal_drug_file
+
+* new drug file => the pipeline should be rerun for full
