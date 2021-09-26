@@ -1,0 +1,15 @@
+[tool.poetry]
+name = "pernod-ricard"
+version = "0.1.0"
+description = ""
+authors = ["Hoai Nam NGUYEN"]
+readme = "README.md"
+packages = [{include = "pernod_ricard"}]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
